@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>Deine Valet Parking Buchung – KreuzfahrtParkplatz.de</title>
+    <meta name="description" content="Valet Parking in Kiel buchen: Kontakt-, Reise- und Fahrzeugdaten in wenigen Schritten eingeben.">
+    <meta name="theme-color" content="#0a2a8c">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="KreuzfahrtParkplatz.de">
+    <meta property="og:title" content="Deine Valet Parking Buchung – KreuzfahrtParkplatz.de">
+    <meta property="og:description" content="Valet Parking in Kiel buchen: Kontakt-, Reise- und Fahrzeugdaten in wenigen Schritten eingeben.">
+    <link rel="icon" href="assets/logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Allura&display=swap">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="oh">
+      <div class="wrap">
+        <a class="logo" href="index.html" aria-label="KreuzfahrtParkplatz.de Startseite"><img src="assets/logo.png" alt="KreuzfahrtParkplatz.de"></a>
+        <div class="trust">
+          <div><svg class="ic  ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Große Auswahl<br>in Kiel</span></div>
+          <div><svg class="ic  ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Sicher &amp; versichert<br><img src="assets/allianz.png" alt="Allianz" class="azs"></span></div>
+          <div><svg class="ic  ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Einfache &amp; schnelle<br>Online-Buchung</span></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="ob">
+        <img src="assets/ov-banner.jpg" alt="">
+        <div class="wrap">
+          <div class="vic"><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16M3 16h18v3H3zM7 19v1.5M17 19v1.5"/><circle cx="7.5" cy="16" r=".6"/><circle cx="16.5" cy="16" r=".6"/></svg></div>
+          <div>
+            <h1>Deine Valet<br>Parking Buchung</h1>
+            <p>Einfach ankommen. Wir parken für dich.</p>
+          </div>
+        </div>
+      </section>
+      <div class="wrap">
+        <div class="steps">
+          <div class="st on"><i>1</i><b>Parkplatz</b><small>Deine Angaben</small></div>
+          <div class="st "><i>2</i><b>Zahlung</b><small>Sicher &amp; einfach</small></div>
+          <div class="st "><i>3</i><b>Bestätigung</b><small>Buchung erhalten</small></div>
+        </div>
+        <div class="og">
+          <form class="card of" id="bform" novalidate data-prod="valet">
+            <div class="fs">
+              <h2><i>1</i>Deine Kontaktdaten</h2>
+              <div class="fr fr--cols3">
+                <div class="f">
+                  <label for="anrede">Anrede <i>*</i></label>
+                  <select id="anrede" name="anrede" required >
+                    <option value="">Bitte auswählen</option>
+                    <option>Herr</option>
+                    <option>Frau</option>
+                    <option>Divers</option>
+                  </select>
+                  <div class="em">Pflichtfeld</div>
+                </div>
+                <div class="f">
+                  <label for="vorname">Vorname <i>*</i></label><input id="vorname" name="vorname" type="text" required placeholder="z. B. Thomas" >
+                  <div class="em">Pflichtfeld</div>
+                </div>
+                <div class="f">
+                  <label for="nachname">Nachname <i>*</i></label><input id="nachname" name="nachname" type="text" required placeholder="z. B. Müller" >
+                  <div class="em">Pflichtfeld</div>
+                </div>
+              </div>
+              <div class="fr c2e">
+                <div class="f">
+                  <label for="email">E-Mail-Adresse <i>*</i></label><input id="email" name="email" type="email" required placeholder="z. B. name@beispiel.de" >
+                  <div class="em">Bitte gültige E-Mail eingeben</div>
+                </div>
+                <div class="f">
+                  <label for="tel">Mobilnummer <i>*</i></label><input id="tel" name="tel" type="tel" required placeholder="z. B. 0176 12345678" >
+                  <div class="help">Für wichtige Informationen zu Anreise, Valet-Service oder kurzfristigen Änderungen.</div>
+                  <div class="em">Bitte gültige Mobilnummer eingeben</div>
+                </div>
+              </div>
+              <div class="fr c32">
+                <div class="f">
+                  <label for="strasse">Straße und Hausnummer <i>*</i></label><input id="strasse" name="strasse" type="text" required placeholder="z. B. Musterstraße 12" >
+                  <div class="em">Pflichtfeld</div>
+                </div>
+                <div class="f">
+                  <label for="plz">PLZ <i>*</i></label><input id="plz" name="plz" type="text" required placeholder="z. B. 24103" maxlength="5" inputmode="numeric">
+                  <div class="em">5-stellige PLZ</div>
+                </div>
+                <div class="f">
+                  <label for="ort">Ort <i>*</i></label><input id="ort" name="ort" type="text" required placeholder="z. B. Kiel" >
+                  <div class="em">Pflichtfeld</div>
+                </div>
+              </div>
+            </div>
+            <div class="fs">
+              <h2><i>2</i>Dein Fahrzeug</h2>
+              <div class="fr c2">
+                <div class="f">
+                  <label for="kennzeichen">Kennzeichen <i>*</i></label><input id="kennzeichen" name="kennzeichen" type="text" required placeholder="z. B. KI-AB 123" >
+                  <div class="em">Pflichtfeld</div>
+                </div>
+                <div class="f">
+                  <label for="marke">Fahrzeugmarke / Modell <i>*</i></label><input id="marke" name="marke" type="text" required placeholder="z. B. VW Tiguan" >
+                  <div class="em">Pflichtfeld</div>
+                </div>
+              </div>
+              <div class="fr c2">
+                <div class="f">
+                  <label for="farbe">Farbe (optional)</label>
+                  <div class="selic">
+                    <svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16M3 16h18v3H3zM7 19v1.5M17 19v1.5"/><circle cx="7.5" cy="16" r=".6"/><circle cx="16.5" cy="16" r=".6"/></svg>
+                    <select id="farbe" name="farbe">
+                      <option value="">Bitte auswählen</option>
+                      <option>Weiß</option>
+                      <option>Schwarz</option>
+                      <option>Grau</option>
+                      <option>Blau</option>
+                      <option>Rot</option>
+                      <option>Andere</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fs">
+              <h2><i>3</i>Deine Kreuzfahrt</h2>
+              <div class="fr c2">
+                <div class="f">
+                  <label for="reederei">Reederei <i>*</i></label>
+                  <select id="reederei" name="reederei" required >
+                    <option value="">Bitte auswählen</option>
+                    <option>AIDA Cruises</option>
+                    <option>Mein Schiff</option>
+                    <option>MSC Cruises</option>
+                    <option>Costa</option>
+                  </select>
+                  <div class="em">Pflichtfeld</div>
+                </div>
+                <div class="f">
+                  <label for="schiff">Schiff <i>*</i></label>
+                  <select id="schiff" name="schiff" required >
+                    <option value="">Bitte auswählen</option>
+                    <option>Mein Schiff 7</option>
+                    <option>AIDAprima</option>
+                    <option>MSC Euribia</option>
+                    <option>Costa Toscana</option>
+                  </select>
+                  <div class="em">Pflichtfeld</div>
+                </div>
+              </div>
+              <div class="trip">
+                <div><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l2 3h14l2-3-9-3zM12 14V5M12 5l5 4h-5M7 11h10"/></svg><span>Abfahrt: <b>Kiel, <span data-an></span></b><br>Rückkehr: <b>Kiel, <span data-ab></span></b></span></div>
+                <div><svg class="ic f " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg><span><b>Terminal<br>Ostseekai</b> <svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.500v.1"/></svg></span></div>
+              </div>
+              <div class="f">
+                <label>Wie viele Personen reisen mit? <i>*</i></label>
+                <div class="stp"><button type="button" aria-label="weniger">−</button><input id="pers" name="pers" type="number" value="2" min="1" max="8" aria-label="Personen"><button type="button" aria-label="mehr">+</button></div>
+                <span class="hint2">Wichtig für unseren Valet-Service.</span>
+              </div>
+            </div>
+            <div class="fs">
+              <h2><i>4</i>Wann kommst du?</h2>
+              <div class="when">
+                <div class="f">
+                  <label>Geplante Ankunft am Terminal <i>*</i></label>
+                  <div class="dt">
+                    <div class="datef"><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><span data-ard></span></div>
+                    <select name="zeit" aria-label="Uhrzeit">
+                      <option>10:00 – 11:00 Uhr</option>
+                      <option>08:00 – 09:00 Uhr</option>
+                      <option>09:00 – 10:00 Uhr</option>
+                      <option>11:00 – 12:00 Uhr</option>
+                      <option>12:00 – 13:00 Uhr</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="ret">
+                  <b>Rückkehr mit:</b>
+                  <div class="l"><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l2 3h14l2-3-9-3zM12 14V5M12 5l5 4h-5M7 11h10"/></svg><span id="retship">Mein Schiff 7</span></div>
+                  Voraussichtliche Ankunft in Kiel:<br><b data-abd>19.06.2027, ca. 06:30 Uhr</b><small>Keine Sorge: Sollte sich die Ankunft deines Schiffes ändern, bleibt deine Valet-Buchung bestehen.</small>
+                </div>
+              </div>
+            </div>
+            <div class="fs">
+              <h2><i>5</i>Besondere Hinweise <small>(optional)</small></h2>
+              <div class="hint">
+                <div><label class="chk"><input type="checkbox" name="h_rollstuhl"><span>Rollstuhl / eingeschränkte Mobilität</span></label><label class="chk"><input type="checkbox" name="h_kinder"><span>Kinderwagen</span></label><label class="chk"><input type="checkbox" name="h_sperr"><span>Sperrgepäck</span></label><label class="chk"><input type="checkbox" name="h_sonst"><span>Sonstiges</span></label></div>
+                <div class="f"><label for="note">Nachricht an den Valet-Service</label><textarea id="note" name="note" rows="3" placeholder="z. B. voraussichtliche Ankunft, besondere Wünsche ..."></textarea></div>
+              </div>
+            </div>
+            <div class="btns"><a class="btn o" href="valet.html"><svg class="ic  back" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Zurück</a><button class="btn b" type="submit">Weiter zur Zahlung <svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </form>
+          <aside class="sum">
+            <div class="card sel selV">
+              <div class="pic"><img src="assets/ov-sel.jpg" alt=""><span><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Deine Auswahl</span></div>
+              <h3>Valet Parking Kiel</h3>
+              <div class="rt"><span class="stars">★</span> <b>4,9</b> (412 Bewertungen)</div>
+              <div class="ml">
+                <div><svg class="ic f " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>Direkt am Ostseekai (Terminal)</div>
+                <div><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.500"/><path d="M2 20c.5-3.500 3-5 7-5s6.500 1.500 7 5M17 4a3.500 3.500 0 0 1 0 7M22 20c-.3-2.500-1.500-4-3.500-4.700"/></svg>Persönliche Fahrzeugübergabe</div>
+              </div>
+              <ul class="ml gr">
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Du fährst direkt zum Terminal</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Wir übernehmen dein Fahrzeug</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Sicherer, bewachter Parkplatz</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Schlüsselabgabe beim Valet</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Bei Rückkehr steht dein Fahrzeug bereit</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Flexible Stornierung</li>
+              </ul>
+              <a class="d" href="valet.html">Alle Details zum Valet Parking <svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <div class="ptl">
+                <div class="pr"><span>Valet Parking (<span data-n>7</span> Tage)</span><b data-f="total"></b></div>
+                <div class="pr"><span>Buchungsgebühr</span><span>0,00 €</span></div>
+                <div class="pr az2"><span>Allianz Extra-Schutz <svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.500v.1"/></svg></span><b>inklusive</b></div>
+                <div class="tot">
+                  <span>Gesamtpreis</span>
+                  <div><b data-f="total"></b><small>inkl. MwSt.</small></div>
+                </div>
+                <div class="ok3"><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Keine versteckten Zusatzkosten</div>
+              </div>
+            </div>
+            <div class="card az3">
+              <div class="h"><img src="assets/allianz.png" alt="Allianz"><b>Parkplatzschutz inklusive</b><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.500v.1"/></svg></div>
+              <ul class="cl s">
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Versichert während der Parkdauer</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Schutz bei Diebstahl, Vandalismus, Brand u. v. m.</li>
+                <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Ohne Zusatzkosten</li>
+              </ul>
+              <a class="more" href="#" data-toast="Mehr Informationen zum Allianz Parkplatzschutz">Mehr Informationen <svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+            <div class="card icons3">
+              <div><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Sichere<br>Buchung</div>
+              <div><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>In wenigen<br>Minuten erledigt</div>
+              <div><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg>Vertrauenswürdige<br>Parkplatzbetreiber</div>
+            </div>
+            <div class="card qt">
+              <span class="qm">“</span>
+              <div>
+                <q>Super bequemer Service!<br>Wir sind direkt zum Terminal gefahren, Auto übergeben und in den Urlaub gestartet. Bei der Rückkehr stand unser Auto pünktlich bereit. Perfekt!</q>
+                <div class="stars">★★★★★</div>
+                <b>Andreas M.</b> · Kiel · Juni 2024
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="ft">
+      <div class="wrap top">
+        <div>
+          <div class="brand">
+            <img src="assets/logo-icon.png" alt="">
+            <div><b>KREUZFAHRT<br><span>PARKPLATZ.DE</span></b><small>PARKPLÄTZE VERGLEICHEN. VERSICHERT PARKEN.</small></div>
+          </div>
+          <p class="d">Deutschlands Vergleichsportal für Kreuzfahrtparkplätze an allen wichtigen Häfen. Einfach, sicher und stressfrei parken – mit Allianz Parkplatzschutz inklusive.</p>
+          <ul class="tick">
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Große Auswahl an Parkplätzen</li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Sicher &amp; versichert mit Allianz</li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Einfache und schnelle Online-Buchung</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Beliebte Häfen</h4>
+          <ul class="l">
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Hamburg</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Bremerhaven</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Rostock</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kreuzfahrt Liegeplätze</h4>
+          <ul class="l">
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel Norwegenkai</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel Ostuferhafen</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel Schwedenkai</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde Terminal 1</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde Terminal 2</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde P7</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde Ostpreußenkai</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde Skandinavienkai</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kreuzfahrtschiffe</h4>
+          <ul class="l">
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel AIDA</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel MSC</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Kiel Mein Schiff</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde AIDA</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde TUI</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde MSC</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Warnemünde Sky Princess</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde MS Deutschland</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde MS Europa</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde Scenic Eclipse II</a></li>
+            <li><a href="kiel/index.html">Kreuzfahrtparkplatz Travemünde MS Hamburg</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sky"><img src="assets/footer-skyline.jpg" alt=""><span class="gr">Gute Reise!</span></div>
+      <div class="cols n6">
+        <div class="col">
+          <h5><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l4-4 4 2 4-3 6 5-5 6-3 1-3-1-3-1z"/></svg><span>Einfacher Buchungs- und Zahlungsablauf</span></h5>
+          <p>Bei uns ist die Buchung deines Kreuzfahrtparkplatzes schnell, einfach und sicher.</p>
+          <p>In nur wenigen Schritten wählst du deinen Wunschparkplatz aus, gibst deine Daten ein und schließt die Zahlung bequem online ab.</p>
+          <p>Du erhältst sofort eine Buchungsbestätigung per E-Mail – und kannst dich entspannt auf deine Kreuzfahrt freuen.</p>
+        </div>
+        <div class="col">
+          <h5><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg><span>Kreuzfahrtparkplatz einfach vergleichen</span></h5>
+          <p>Statt verschiedene Parkplatzanbieter einzeln zu suchen, kannst du auf kreuzfahrtparkplatz.de unterschiedliche Angebote übersichtlich miteinander vergleichen.</p>
+          <p>Neben dem Gesamtpreis siehst du wichtige Informationen wie:</p>
+          <p><b>Entfernung zum Terminal · Transferzeit · Shuttle-Service · Stellplatzart · Öffnungszeiten · Schlüsselabgabe · Bewertungen · weitere Leistungen</b></p>
+        </div>
+        <div class="col">
+          <h5><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg><span>Parkplätze in Kiel, Hamburg, Warnemünde und Bremerhaven</span></h5>
+          <p>Viele Kreuzfahrten starten an den großen deutschen Kreuzfahrthäfen. Deshalb findest du bei uns gezielt Parkmöglichkeiten für:</p>
+          <ul>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Kreuzfahrtparkplatz Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Kreuzfahrtparkplatz Hamburg</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Kreuzfahrtparkplatz Warnemünde</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Kreuzfahrtparkplatz Bremerhaven</b></span></li>
+          </ul>
+          <p>Auf den jeweiligen Hafenseiten kannst du die verfügbaren Anbieter, Parkplatzarten und Leistungen miteinander vergleichen.</p>
+        </div>
+        <div class="col">
+          <h5><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l2 3h14l2-3-9-3zM12 14V5M12 5l5 4h-5M7 11h10"/></svg><span>Parkplatz passend<br>zu deiner Reederei</span></h5>
+          <p>Auch die Reederei und das Abfahrtsterminal können für die Auswahl des passenden Parkplatzes entscheidend sein.</p>
+          <p>Deshalb kannst du gezielt nach Parkmöglichkeiten für bekannte Reedereien wie <b>AIDA, Mein Schiff, MSC Cruises</b> und <b>Costa</b> suchen.</p>
+          <ul>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>AIDA Parkplatz Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Mein Schiff Parkplatz Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>MSC Parkplatz Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Costa Parkplatz Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Parkplatz Ostseekai Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Parkplatz Ostuferhafen Kiel</b></span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Kreuzfahrt Parkplatz Kiel mit Shuttle</b></span></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16M3 16h18v3H3zM7 19v1.5M17 19v1.5"/><circle cx="7.5" cy="16" r=".6"/><circle cx="16.5" cy="16" r=".6"/></svg><span>Terminal-Parking,<br>Shuttle oder Valet?</span></h5>
+          <p>Welche Parkart für dich am besten geeignet ist, hängt von deinen persönlichen Prioritäten ab.</p>
+          <ul>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Möglichst kurze Wege:</b> Parkplatz direkt am Terminal</span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Günstiger parken:</b> Außenstellplatz mit Shuttle</span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Wettergeschützt parken:</b> Hallen- oder Parkhausangebote</span></li>
+            <li><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><b>Maximaler Komfort:</b> verfügbare Valet-Angebote vergleichen</span></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></svg><span>Mit Allianz Parkplatzschutz – ohne Zusatzkosten</span></h5>
+          <p>Ein besonderer Vorteil einer qualifizierenden Buchung über kreuzfahrtparkplatz.de ist der zusätzliche Fahrzeugschutz der Allianz.</p>
+          <p>Damit möchten wir nicht nur helfen, einen passenden Parkplatz zu finden, sondern unseren Kunden auch während ihrer Kreuzfahrt ein zusätzliches gutes Gefühl geben.</p>
+          <div class="cta"><b>Jetzt einfach online buchen und sicher parken.</b></div>
+        </div>
+      </div>
+      <div class="bar">
+        <div class="wrap">
+          <span>© 2026 KreuzfahrtParkplatz.de &nbsp;|&nbsp; Alle Rechte vorbehalten.</span>
+          <div class="pays2"><span class="pv">VISA</span><span class="pm2"><i></i><i></i></span><span class="pp">PayPal</span><span class="ap">Apple Pay</span><span class="gp">G Pay</span><span class="bk"><svg class="ic  " viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg> Banküberweisung</span></div>
+        </div>
+        <div class="wrap legal"><a href="#" data-toast="AGB">AGB</a><a href="#" data-toast="Datenschutz">Datenschutz</a><a href="#" data-toast="Widerrufsbelehrung">Widerrufsbelehrung</a><a href="#" data-toast="Impressum">Impressum</a><a href="#" data-toast="Cookie-Einstellungen">Cookie-Einstellungen</a><a href="#" data-toast="Barrierefreiheit">Barrierefreiheit</a><a href="affiliate.html">Jetzt Affiliate Partner werden</a><span class="lang"><i></i>Deutschland <svg class="ic  dn" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></span></div>
+      </div>
+    </footer>
+    <div class="toast" role="status"></div>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
